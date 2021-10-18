@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <h2>Contact Information</h2>
+    <h3>Required fields are followed by *</h3>
+<fieldset>
+    <p>Name:* <input type="text" name="Full Name" required> </p>
+    <fieldset>
+        <legend>Gender*</legend>
+    <p>Male: <input type="radio" name="Gender" id="Male"></p>
+    <p>Female: <input type="radio" name="Gender" id="">Female</p>
+    <p>Others: <input type="radio" name="Gender" id="">Others</p>
+
+</fieldset>
+    <p>Address:* <textarea name="Address" id="Address" cols="100" rows="10"></textarea required> </p>
+    <p>Mail: <input type="email" name="Mail" id="Mail"></p>
+    <p>Pincode:* <input type="number" name="pincode" id="pincode" required> </p>
+    <p>Mobile no:* <input type="number" name="phone no" id="phone no" required> </p>
+</fieldset>
+    <h2>Payment Information</h2>
+<fieldset>
+    <legend>Card</legend>
+    <p>Card Type: <select name="cardtype" id="cardtype">
+        <option value="">&lt;--Select Your Card--&gt; </option>
+        <option value="Mater Card">Master Card</option>
+        <option value="RuPay">RuPay</option>
+        <option value="Visa">Visa</option>
+    </select>
+    </p>
+</fieldset>
+<fieldset>
+<p>Card Details <input type="number" name="Card" id="Card"></p>
+    <p>Expiry Date <input type="date" name="exdate" id="exdate"></p>
+    <p>CVV <input type="password" name="CVV" id="CVV"></p>
+    <p><input type="submit" value="Pay Now"></p>
+    
+</fieldset>
+</body>
+</html>
